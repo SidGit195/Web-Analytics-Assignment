@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Analytics Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Web Analytics Event Service Demo</h1>
+        
+        <div id="sw-status" class="status info">
+            Service Worker: Initializing...
+        </div>
+        
+        <div class="demo-section">
+            <h3>📄 View Event</h3>
+            <p>A view event is automatically sent when this page loads.</p>
+            <button id="manual-view">Send Manual View Event</button>
+        </div>
+        
+        <div class="demo-section">
+            <h3>🖱️ Click Event</h3>
+            <p>Click the button below to send a click event.</p>
+            <button id="click-me">Click Me!</button>
+        </div>
+        
+        <div class="demo-section">
+            <h3>📍 Location Event</h3>
+            <p>Get your location and send a location event.</p>
+            <button id="get-location">Get My Location</button>
+            <div id="location-status"></div>
+        </div>
+        
+        <div class="analytics">
+            <h3>📊 Analytics Dashboard</h3>
+            <button id="refresh-analytics">Refresh Analytics</button>
+            
+            <div class="analytics-results">
+                <h4>Total Events:</h4>
+                <pre id="total-events">Loading...</pre>
+            </div>
+            
+            <div class="analytics-results">
+                <h4>Events by Type:</h4>
+                <pre id="events-by-type">Loading...</pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
