@@ -13,8 +13,8 @@ A Node.js-based web analytics service that captures and analyzes user events (vi
 
 1. **Clone the repository**
     ```bash
-    git clone <repository-url>
-    cd faym
+    git clone https://github.com/SidGit195/Web-Analytics-Assignment.git
+    cd Web-Analytics-Assignment
     ```
 
 2. **Install dependencies**
